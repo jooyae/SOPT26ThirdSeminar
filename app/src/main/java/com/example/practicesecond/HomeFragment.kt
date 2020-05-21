@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
         datas.apply {
             add(
                 InstaData(
-                    userName = "박주예",
+                    userName = "JooYae",
                     img_profile = "https://image-notepet.akamaized.net/resize/620x-/seimage/20190816%2Ff07bd9f247293aa0317f2c8faba7e83b.png",
                     img_contents = "https://image-notepet.akamaized.net/resize/620x-/seimage/20190816%2F41d1b68f2fa91f57a41262b3df554d26.png"
 
@@ -42,7 +42,7 @@ class HomeFragment : Fragment() {
             )
             add(
                 InstaData(
-                    userName = "안드로이드",
+                    userName = "SOPT ANDROID",
                     img_profile = "https://image-notepet.akamaized.net/resize/620x-/seimage/20190816%2F78fa1190066df65764a9cb49f597ad7e.png",
                     img_contents = "https://image-notepet.akamaized.net/resize/620x-/seimage/20190816%2F410e4ce95b5506e48e32c971f971ce4b.png"
 
@@ -50,7 +50,7 @@ class HomeFragment : Fragment() {
             )
             add(
                 InstaData(
-                    userName = "26기",
+                    userName = "KOTLIN",
                     img_profile = "https://image-notepet.akamaized.net/resize/620x-/seimage/20190816%2F8a16940b6dba12fce66675f5293e404b.png",
                     img_contents = "https://pds.joins.com/news/component/htmlphoto_mmdata/201909/01/136ad58b-b410-4db8-939b-ec0b40b9d1f5.jpg"
 

@@ -1,20 +1,34 @@
-## SOPT ANDROID SECOND HOMEWORK
 
-1.Bottom navigation, View Pager, RecyclerView 완성하기 
----
-2.RecyclerView itemDecoration 기능
-> 항목, 하이라이트, 그룹화 경계를 구분하는데 쓰임 
->>    void getItemOffsets (React outReact, int  itemPosition, RecylcerView parent, RecyclerView.State state) 사용
----
-3.RecyclerView clipToPadding 기능
-> padding 영역만큼 child스크롤 영역이 줄어드는 효과로 
-> 기본값은 true, false로 설정할 경우 스크롤 영역은 유지한채
-> 원하는 위치에 padding값을 넣을 수 있음 
----
-Screenshots
----
-<div>
-<img width ="200" src ="https://user-images.githubusercontent.com/58849278/81381368-94994680-9147-11ea-857a-ae82876d394e.png">
-<img width = "200" src = "https://user-images.githubusercontent.com/58849278/81382719-c90e0200-9149-11ea-99cb-aebc99d10013.png">
-<img width = "200" src ="https://user-images.githubusercontent.com/58849278/81381378-97943700-9147-11ea-8c94-c4a2ac01f477.png">
-</div>
+## SOPT third project
+
+***1. Postman을 이용한 로그인, 회원가입 구현 
+***2. Request / Response 객체
+***3. Retrofit Interface 구현체 생성 
+***4. Callback 등록과 통신 요청 
+
+ ***
+ ## MEMO
+ 
+ 
+
+ 1. JSON data 사용시, 서버에서 정한 변수가 아닌 내가 이름을 지어주고 싶을 때 
+ 
+
+         data class ResponseLogin(  
+            val status : Int,  
+            val success : Boolean,  
+          **@SerializedName("data")**  
+            val data: SomeData?  
+        )
+2. requestLogin/Register에서 로그인 정보 전달 후 Callback 등록해주고 Retrofit의 Callback import 해주기 
+3. Retrofit Interface 설계
+
+	    interface RequestInterface{  
+        @POST("user/signin/")  
+        fun requestLogin(@Body body : RequestLogin) : Call<ResponseLogin>  
+        @POST("user/signup/")  
+        fun requestRegister(@Body body: RequestRegister) : Call<ResponseRegister>  
+    }
+***
+## Screenshot
+![thirdproject](https://user-images.githubusercontent.com/58849278/82591394-3dc94d80-9bda-11ea-84b9-51ea76bfa6bc.gif)
